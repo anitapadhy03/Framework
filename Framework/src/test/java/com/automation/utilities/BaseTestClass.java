@@ -33,7 +33,8 @@ public class BaseTestClass {
 	{
 	  excelDataParovider=new ExcelDataprovider();
 	  configDataProvider=new ConfigDataProvider();
-	  ExtentHtmlReporter  extent=new ExtentHtmlReporter(new File("./Reports/"+Helper.getCurrentDateTime()+".html"));
+	 // ExtentHtmlReporter  extent=new ExtentHtmlReporter(new File("./Reports/"+Helper.getCurrentDateTime()+".html"));
+	  ExtentHtmlReporter  extent=new ExtentHtmlReporter(new File("./Reports/ExtentReport.html"));
 	  report=new ExtentReports();
 	  report.attachReporter(extent);
 	}
