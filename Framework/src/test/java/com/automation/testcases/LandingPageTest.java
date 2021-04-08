@@ -18,7 +18,7 @@ public class LandingPageTest extends BaseTestClass{
 	@Test
 	public void testLogin()
 	{
-		
+		Reporter.log("Application started-Reporter");
 		logger=report.createTest("LogintoCRM");
 		//To initialize the page object. It returns the object of the same class.
 		LandingPage landingPage=PageFactory.initElements(driver, LandingPage.class);
