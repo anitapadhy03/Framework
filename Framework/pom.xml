@@ -60,8 +60,13 @@
 		
 		<configuration>
 		<suiteXmlFiles>
-		<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+		<suiteXmlFile>XMLFiles/${XmlFile}</suiteXmlFile>
 		</suiteXmlFiles>
+		
+		<SystemPropertyVariables>
+		<launchbrowser>${browser}</launchbrowser>
+		<appURL>${url}</appURL>
+		</SystemPropertyVariables>
 		</configuration>
 </plugin>
 
