@@ -22,7 +22,7 @@ public class LoginPage {
 	public WebElement txtpassword;
 	
 	
-	@FindBy(xpath="//div[contains(text(), 'Login')]")
+	@FindBy(xpath="//div[contains(text(), 'Login1')]")
 	public WebElement btnSubmit;
 	
 	

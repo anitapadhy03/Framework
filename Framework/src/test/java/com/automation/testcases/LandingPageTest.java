@@ -2,6 +2,7 @@ package com.automation.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,6 +16,7 @@ import com.automation.utilities.Helper;
 
 public class LandingPageTest extends BaseTestClass{
 	
+	//@Test(retryAnalyzer=com.automation.listeners.RetryAnalyser.class)
 	@Test
 	public void testLogin()
 	{
@@ -29,10 +31,18 @@ public class LandingPageTest extends BaseTestClass{
 		loginPage.login(excelDataParovider.getStringValue("Login", 0, 0),excelDataParovider.getStringValue("Login", 0, 1));
 		logger.pass("Login successful");
 		Reporter.log("Login Successful-Reporter");
+	
 		
 	}
 	
-
+	
+	  //@Test(retryAnalyzer=com.automation.listeners.RetryAnalyser.class)
+//	  @Test
+//	  public void testMethod() 
+//	  { 
+//		  Assert.assertTrue(true); 
+//	  }
+//	 
 	
 
 }
